@@ -9,7 +9,7 @@ import com.allen.tinyioc.beans.io.ResourceLoader;
 import com.allen.tinyioc.beans.xml.XmlBeanDefinitionReader;
 
 /**
- * @author yihua.huang@dianping.com
+ * @author
  */
 public class BeanFactoryTest {
 
@@ -48,5 +48,7 @@ public class BeanFactoryTest {
 		// 4.获取bean
 		HelloWorldService helloWorldService = (HelloWorldService) beanFactory.getBean("helloWorldService");
 		helloWorldService.helloWorld();
-	}
+
+        System.out.println( "test success" );
+    }
 }
